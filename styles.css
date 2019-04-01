@@ -1,0 +1,13 @@
+h1 {
+    color: red;
+    font-size: 3in;
+    font-family: "Comic Sans Ms", tahoma, sans-serif;
+}
+body {
+    background-color: antiquewhite;
+}
+p {
+    color: orange;
+    font-size: 120px;
+    font-family: arial;
+}

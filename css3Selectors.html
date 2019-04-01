@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3 Selectors</title>
+    <style>
+        div>p {
+            font-size: 30pt;
+            color: #fc0;
+            /*Children only*/
+        }
+
+        /*h1+p {
+            color: magenta;
+            font-size: 30pt;
+        } First brother only*/
+
+        h1~p {
+            color: magenta;
+            font-size: 30pt;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Content</p>
+        <header>
+            <p>Content</p>
+            <h1>content</h1>
+            <p>content</p>
+            <h2>content</h2>
+            <p>content</p>
+        </header>
+        <h1>content</h1>
+        <p>content</p>
+        <h1>content</h1>
+        <p>content</p>
+        <p>content</p>
+        <h2>content</h2>
+        <p>content</p>
+        <p>content</p>
+    </div>
+</body>
+
+</html>

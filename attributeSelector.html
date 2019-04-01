@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attribute Selector</title>
+    <link rel="stylesheet" href="normalizeV8.0.1.css">
+
+    <style>
+        * {
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 30pt;
+        }
+
+        a[title="home sweet home"] {
+            color: teal;
+            background-color: blanchedalmond;
+        }
+
+        a[title~="home"] {
+            color: brown;
+            background-color: blanchedalmond;
+        }
+
+        a[title*="home"] {
+            color: brown;
+            background-color: blanchedalmond;
+        }
+
+        a[href^="http"] {
+            color: orange;
+            background-color: olivedrab;
+        }
+
+        a[href$="pdf"] {
+            color: red;
+            background-color: palegreen;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li><a href="#" title="home sweet home">Home</a></li>
+        <li><a href="#" title="home bitter home">About</a></li>
+        <li><a href="#" title="homeo">Media</a></li>
+        <li><a href="https://www.wikipedia.org">wikipedia</a></li>
+        <li><a href="https://www.walla.co.il">walla</a></li>
+        <li> <a href="map.pdf"> download map</a></li>
+
+    </ul>
+
+</body>
+
+</html>

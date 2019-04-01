@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drop Nav</title>
+    <style>
+        nav {
+            width: 500px;
+            height: 34px;
+            background-color: lime;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        ul li a {
+            display: block;
+            padding: 15px 15px;
+            line-height: 1.5;
+            text-decoration: none;
+            color: aliceblue;
+            background-color: #666;
+            width: 100px;
+            box-sizing: border-box;
+            border-right: 1px solid #fff;
+        }
+
+        li ul li a {
+            border-bottom: 1px solid #fff;
+        }
+
+        li ul li {
+            display: none;
+            clear: both;
+        }
+
+        li:hover ul li {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Heading</a></li>
+            <li><a href="#">Ezra</a>
+                <ul>
+                    <li><a href="#">Sub</a></li>
+                    <li><a href="#">Sub</a></li>
+                    <li><a href="#">Sub</a></li>
+                    <li><a href="#">Sub</a></li>
+                    <li><a href="#">Sub</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Heading</a>
+                <ul>
+                    <li><a href="#">Sub</a></li>
+                    <li><a href="#">Sub</a></li>
+                    <li><a href="#">Sub</a></li>
+                    <li><a href="#">Sub</a></li>
+                    <li><a href="#">Sub</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Heading</a></li>
+            <li><a href="#">Heading</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
